@@ -15,7 +15,7 @@ def h_line(w, x):
 	return w[0] + w[1] * x
 
 def generate_data(N):
-	"""generate data based on target function"""
+	"""Generate data based on target function"""
 	data = []
 	y = []
 	for i in range(N):
