@@ -78,12 +78,12 @@ def percetron_learning_algorithm(N, runs, init_weights=None, visualize=True, in_
 		# must convert two points into general form.
 		# Point slope form: y - y0 = m(x - x0)
 		# Converted to general form: -mx + y + (-y0 + m*x0) = 0
-		# where m = (q - s)/(p - r), y0 = p, x0 = q
-		# Thus, a = -(q - s)/(p - r), b = 1, c = -p + q*(q - s)/(p - r)
+		# where m = (q - s)/(p - r), y0 = q, x0 = p
+		# Thus, a = -(q - s)/(p - r), b = 1, c = -q + p*(q - s)/(p - r)
 
 		a = -(q - s)/(p - r)
 		b = 1
-		c = -p + q*(q - s)/(p - r)
+		c = -q + p*(q - s)/(p - r)
 
 		# weights of target function, i.e. target function = ax + by + c
 		true_weights = np.array([c, a, b])
